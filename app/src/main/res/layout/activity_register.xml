@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.bam.tracker.Register">
+    <ScrollView
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/title"
+        android:text="@string/welcome_to_our_login_system"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginTop="35dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText"
+        android:hint="@string/username"
+        android:textColorHint= "#000"
+        android:textSize="22sp"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:textColorHint= "#000"
+        android:id="@+id/editText2"
+        android:hint="@string/enter_password"
+        android:textSize="25sp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+    <EditText
+        android:id="@+id/PasswordCheck"
+        android:layout_marginTop="22dp"
+        android:textSize="22sp"
+        android:textColorHint= "#000"
+        android:hint="Enter Your PassWord Again"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_width="320dp"
+        android:inputType="textPassword"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText2"/>
+
+    <EditText
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="@string/emailid"
+        android:textSize="25sp"
+        android:textColorHint= "#000"
+        android:id="@+id/editText3"
+        android:layout_below="@+id/PasswordCheck"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:hint="@string/phoneno"
+        android:textSize="25sp"
+        android:textColorHint= "#000"
+        android:id="@+id/editText4"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp" />
+    <EditText
+        android:id="@+id/OTP"
+        android:layout_below="@+id/editText4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:hint="enter Your Otp"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="22sp"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textColorHint= "#000"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content" />
+  <Button
+        android:id="@+id/OTPGene"
+        android:layout_width="250dp"
+        android:text="OTP Generator"
+
+        android:textSize="22sp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/OTP"
+        android:layout_alignLeft="@+id/OTP"
+        android:layout_alignStart="@+id/OTP" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/submit"
+        android:textSize="25sp"
+        android:id="@+id/button"
+        android:layout_below="@+id/OTP"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+         />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

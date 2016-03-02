@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.bam.tracker.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/Terrain"
+        android:title="@string/Terrain"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/Street"
+        android:title="@string/Street"
+        app:showAsAction="never"/>
+</menu>
